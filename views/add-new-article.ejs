@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <%- include('./partials/head') %>
+
+  <body id="body">
+    <%- include('./partials/header') %>
+    <main id="main">
+      <section>
+        <h1>Create New Article ✌</h1>
+      </section>
+
+      <form method="POST" action="/all-articles">
+        
+        <label for="title">Article Title: 🐧</label>
+        <input name="title" id="title" type="text" required />
+
+        <label for="summary">Article Summary: 😁 </label>
+        <input name="summary" id="summary" type="text" required />
+
+        <label for="articlBody">Article body: 😉</label>
+        <textarea name="articlBody" id="articlBody" required></textarea>
+
+        <button class="create">Create</button>
+      </form>
+    </main>
+    <%- include('./partials/footer') %>
+  </body>
+</html>
